@@ -174,15 +174,94 @@ body {
     height: 20px;
 }
 
+.hero-text {
+    flex: 1;
+    padding-right: 50px;
+    padding-left: 50px; /* added for mobile/tablet scaling */
+}
 
-@media (max-width: 1024px) {
-    .hero {
-        flex-direction: column;
-        padding: 40px 20px;
+.hero-text h1,
+.hero-text p,
+.hero-text button {
+    margin-left: 0; /* removed fixed 200px margin */
+}
+
+/* --- Laptop screens (1025px - 1440px) --- */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .hero-text {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 44px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+
+    .hero-text button {
+        padding: 12px 35px;
+        font-size: 15px;
+    }
+
+    .hero-image img {
+        height: 700px;
+    }
+
+    .image-stack img,
+    .image-large img {
+        width: 280px;
+        height: 200px
+    }
+
+    .image-large img {
+        width: 300px;
+        height: auto;
     }
 }
 
-@media (max-width: 768px) {
+/* --- Tablet screens (768px - 1024px) --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-text button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        height: auto;
+        max-width: 90%;
+    }
+
+    .image-text-section {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .image-stack img,
+    .image-large img {
+        width: 90%;
+        height: 100%
+    }
+}
+
+/* --- Mobile screens (<768px) --- */
+@media (max-width: 767px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -196,28 +275,10 @@ body {
 
     .navbar {
         flex-wrap: wrap;
+        padding: 10px 20px;
     }
 
-    .hero-text h1 {
-        font-size: 32px;
-    }
-
-    .hero-text p {
-        font-size: 18px;
-    }
-
-    .hero-image img {
-        height: auto;
-    }
-
-    .image-text-section {
-        flex-direction: column;
-        padding: 40px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .text-box {
+    .hero-text {
         padding: 20px;
     }
 
@@ -230,16 +291,37 @@ body {
     }
 
     .hero-text button {
-        padding: 10px 25px;
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .image-text-section {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
     }
 
     .image-stack img,
     .image-large img {
         width: 100%;
-        height: auto;
+        height: 200%
     }
 
-    .image-text-section {
-        gap: 20px;
+    .text-box {
+        padding: 20px;
+    }
+
+    .click-container h4 {
+        font-size: 16px;
+    }
+
+    .click-container img {
+        width: 18px;
+        height: 18px;
     }
 }
