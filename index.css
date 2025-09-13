@@ -15,7 +15,7 @@ body {
     align-items: center;
     background-color: #ff6f61;
     padding: 15px 50px;
-    flex-direction: row-reverse; /* Shift hamburger to left */
+    flex-direction: row-reverse; 
 }
 
 .nav-links {
@@ -33,7 +33,7 @@ body {
 }
 
 .menu-icon {
-    order: -1; /* Ensures hamburger is first (on left) */
+    order: -1; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,8 +158,8 @@ body {
 
 .click-container {
     display: flex;
-    align-items: center; /* vertically center the text and icon */
-    gap: 10px; /* space between text and arrow */
+    align-items: center; 
+    gap: 10px; 
     cursor: pointer;
 }
 
@@ -170,23 +170,23 @@ body {
 }
 
 .click-container img {
-    width: 20px; /* adjust size as needed */
+    width: 20px; 
     height: 20px;
 }
 
 .hero-text {
     flex: 1;
     padding-right: 50px;
-    padding-left: 50px; /* added for mobile/tablet scaling */
+    padding-left: 50px; 
 }
 
 .hero-text h1,
 .hero-text p,
 .hero-text button {
-    margin-left: 0; /* removed fixed 200px margin */
+    margin-left: 0; 
 }
 
-/* --- Laptop screens (1025px - 1440px) --- */
+
 @media (min-width: 1025px) and (max-width: 1440px) {
     .hero-text {
         padding-left: 30px;
@@ -222,7 +222,7 @@ body {
     }
 }
 
-/* --- Tablet screens (768px - 1024px) --- */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .hero {
         flex-direction: column;
@@ -260,7 +260,7 @@ body {
     }
 }
 
-/* --- Mobile screens (<768px) --- */
+
 @media (max-width: 767px) {
     .nav-links {
         display: none;
