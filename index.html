@@ -9,9 +9,14 @@
 </head>
 
 <body>
+
     <header class="header-with-menu">
         <nav class="navbar">
-            <ul class="nav-links" style="margin-left: 200px;">
+            <button class="menu-icon" id="menu-toggle">
+                <img src="assets/menu-bar.png" alt="Menu Bar Icon">
+            </button>
+
+            <ul class="nav-links" id="nav-links" style="margin-left: 60px;">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Order</a></li>
                 <li><a href="#">Food</a></li>
@@ -19,29 +24,21 @@
                 <li><a href="#">Testimonials</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-            <button class="menu-icon">
-                <img src="assets/menu-bar.png" alt="Menu Bar Icon">
-            </button>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
-            <h1 style="margin-left: 100px;">Lorem Ipsum</h1>
-            <p style="margin-left: 100px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique.
-                Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut
-                tristique. Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat
-                pretium. Sed pulvinar, massa ac porta viverra.</p>
-            <button style="margin-left: 100px;">Click Me</button>
+            <h1>Lorem Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta viverra.</p>
+            <button>Click Me</button>
         </div>
         <div class="hero-image">
             <img src="assets/pexels-robin-stickel-70497.jpg" alt="Burger and Fries">
         </div>
     </section>
 
-    <!-- New Image Text Section -->
-    <section class="image-text-section">
+    <section class="image-text-section" style="margin-top: 200px;">
         <div class="images-container">
             <div class="image-stack">
                 <img src="assets/pexels-rachel-claire-6752433.jpg" alt="Stage Neon Sign">
@@ -51,14 +48,19 @@
                 <img src="assets/pexels-mister-mister-3434523.jpg" alt="Food Table">
             </div>
         </div>
+
         <div class="text-box">
             <p class="small-text">LOREM IPSUM</p>
-            <h1>LOREM IPSUM SET ADEMIR</h1>
-            <button class="menu-icon">
-                <h4>Click</h4><img src="assets/icons8-arrow-30.png" alt="Menu Bar Icon" width="900px">
-            </button>
+            <h1 style="font-size: 90px;" >LOREM IPSUM 
+                <br>SET ADEMIR</h1>
+                <div class="click-container">
+    <h4>Click</h4>
+    <img src="assets/icons8-arrow-30.png" alt="Arrow Icon">
+</div>
+
         </div>
     </section>
+
 </body>
 
 </html>
